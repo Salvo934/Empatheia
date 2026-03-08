@@ -16,7 +16,7 @@ export default function Header() {
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="logo" onClick={() => setMenuOpen(false)}>
-          <img src="/logoN:F.svg" alt="" className="logo-img" />
+          <img src="/FaviconSito6.png" alt="" className="logo-img" />
           <span className="logo-text">Empatheia</span>
         </Link>
 

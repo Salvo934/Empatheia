@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-brand">
           <Link to="/" className="footer-logo">
-            <img src="/logoN:F.svg" alt="" className="footer-logo-img" />
+            <img src="/FaviconSito6.png" alt="" className="footer-logo-img" />
             Empatheia
           </Link>
           <p className="footer-tagline">
