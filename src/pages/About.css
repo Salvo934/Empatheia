@@ -85,3 +85,39 @@
   border-color: var(--gold-light);
   color: var(--bg);
 }
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 2rem 0 3rem;
+  }
+
+  .about-header {
+    margin-bottom: 2rem;
+  }
+
+  .about-tagline {
+    font-size: 1.15rem;
+  }
+
+  .about-block {
+    margin-bottom: 2rem;
+  }
+
+  .about-block h2 {
+    font-size: 1.35rem;
+  }
+
+  .about-block p {
+    font-size: 1rem;
+  }
+
+  .about-cta {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .about-cta .btn {
+    padding: 14px 24px;
+    min-height: 48px;
+  }
+}

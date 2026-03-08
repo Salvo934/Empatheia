@@ -107,3 +107,43 @@
   color: var(--text-muted);
   margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+  .story-single {
+    padding: 1.5rem 0 3rem;
+  }
+
+  .back-link {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .story-header {
+    margin-bottom: 2rem;
+  }
+
+  .story-title {
+    font-size: 1.65rem;
+  }
+
+  .story-body {
+    font-size: 1.05rem;
+  }
+
+  .story-body p {
+    margin-bottom: 1rem;
+  }
+
+  .story-footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .story-footer .btn {
+    min-height: 48px;
+    padding: 14px 24px;
+  }
+}

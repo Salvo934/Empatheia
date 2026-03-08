@@ -501,15 +501,90 @@
 @media (max-width: 768px) {
   .hero {
     min-height: 75vh;
-    padding: 4rem 0 6rem;
+    padding: 3rem 0 5rem;
+  }
+
+  .hero-inner {
+    margin-top: 2rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
   }
 
   .hero-actions {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 0.75rem;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-btn {
+    padding: 14px 24px;
+    font-size: 1rem;
+  }
+
+  .featured {
+    padding: 2.5rem 0 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .manifesto-section {
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .manifesto {
+    padding: 1.75rem 1.25rem 1.75rem 1rem;
+    border-radius: 0 16px 16px 0;
+  }
+
+  .manifesto-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .stories-grid-section {
+    padding: 1.5rem 0 3rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .cta-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .cta-text {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .stories-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 70vh;
+    padding: 2.5rem 0 4rem;
+  }
+
+  .hero-title {
+    font-size: 1.65rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
   }
 }
