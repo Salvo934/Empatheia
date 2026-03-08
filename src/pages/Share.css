@@ -1,0 +1,201 @@
+.share-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 4rem 0 5rem;
+  background-image: url('/sfondostoria.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.share-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(250, 246, 240, 0.88) 0%,
+    rgba(242, 235, 226, 0.92) 50%,
+    rgba(250, 246, 240, 0.88) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.share-page .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.share-header {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 520px;
+}
+
+.share-page .page-title {
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.share-intro {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-top: 0.5rem;
+}
+
+.share-form-wrap {
+  width: 100%;
+  max-width: 560px;
+  margin-top: 0.5rem;
+  padding: 2.5rem 2rem;
+  background: rgba(253, 251, 247, 0.95);
+  border-radius: 20px;
+  box-shadow:
+    0 4px 40px rgba(44, 41, 38, 0.06),
+    0 0 0 1px rgba(var(--gold-rgb), 0.08);
+}
+
+.share-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.share-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.share-form label span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.share-form input,
+.share-form select,
+.share-form textarea {
+  padding: 14px 18px;
+  font-size: 1rem;
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.share-form input::placeholder,
+.share-form textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.8;
+}
+
+.share-form input:focus,
+.share-form select:focus,
+.share-form textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(var(--gold-rgb), 0.12);
+}
+
+.share-form textarea {
+  resize: vertical;
+  min-height: 220px;
+  line-height: 1.65;
+}
+
+.btn-submit {
+  align-self: center;
+  padding: 16px 40px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--bg);
+  border: none;
+  cursor: pointer;
+  margin-top: 0.75rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-submit:hover {
+  background: var(--gold-light);
+  color: var(--bg);
+  transform: translateY(-1px);
+}
+
+.share-page--success .container {
+  min-height: 60vh;
+  justify-content: center;
+}
+
+.share-success {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: rgba(253, 251, 247, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 40px rgba(44, 41, 38, 0.06);
+}
+
+.share-success strong {
+  color: var(--gold);
+}
+
+.share-success .page-title {
+  margin-bottom: 1rem;
+}
+
+.share-success p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.share-success .btn {
+  display: inline-flex;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--bg);
+}
+
+.share-success .btn:hover {
+  background: var(--gold-light);
+  color: var(--bg);
+}
+
+.share-help {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: center;
+  width: 100%;
+  max-width: 560px;
+  background: rgba(253, 251, 247, 0.7);
+  border-radius: 12px;
+}
+
+.share-help a {
+  color: var(--gold);
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+.share-help a:hover {
+  text-decoration: underline;
+}
