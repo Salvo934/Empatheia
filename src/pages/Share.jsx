@@ -113,7 +113,7 @@ ${body}
               <option value="Bullismo">Bullismo</option>
               <option value="Ingiustizia">Ingiustizia</option>
               <option value="Storia di coraggio">Storia di coraggio</option>
-              <option value="Altro">Altro</option>
+              <option value="Altro">Altre storie</option>
             </select>
           </label>
           <label>

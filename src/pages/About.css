@@ -26,10 +26,12 @@
 .about-content {
   width: 100%;
   max-width: 680px;
+  text-align: center;
 }
 
 .about-block {
   margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .about-block h2 {
