@@ -26,19 +26,9 @@ E se avete la fortuna di avere accanto persone che vi vogliono bene, ricordate c
 Empatheia è questo: uno spazio dove le storie vengono ascoltate, comprese e condivise.
 Perché nessuna voce è troppo piccola per essere importante.`,
   },
+  
   {
     id: '2',
-    slug: 'il-silenzio-dopo-la-violenza',
-    title: 'Il silenzio dopo la violenza',
-    excerpt: 'Quando hai paura di parlare, il silenzio diventa una prigione. Questa è la mia uscita.',
-    author: 'Anonimo',
-    date: '2024-02-08',
-    category: 'Ingiustizia',
-    readTime: '6 min',
-    body: 'Quando hai paura di parlare, il silenzio diventa una prigione. Io ci sono rimasto dentro per anni. A casa non potevo dire niente, a scuola fingevo che andasse tutto bene. La violenza non era solo fisica: era il modo in cui mi sentivo invisibile, come se la mia voce non contasse.\n\nScrivo qui perché qualcuno mi ha detto che le storie possono cambiare le cose. Non so se è vero, ma questa è la mia uscita dalla prigione. Se leggi e ti riconosci, non restare in silenzio. Cerca un adulto di cui ti fidi. Meriti di essere ascoltato.',
-  },
-  {
-    id: '3',
     slug: 'diverso-non-sbagliato',
     title: 'Diverso non è sbagliato',
     excerpt: 'Mi hanno fatto credere che essere me stesso fosse un errore. Ora so che era la loro paura, non la mia.',
@@ -49,7 +39,7 @@ Perché nessuna voce è troppo piccola per essere importante.`,
     body: 'Mi hanno fatto credere che essere me stesso fosse un errore. "Sei strano", "non sei normale", "cambiati". Ho provato. Ho nascosto i miei interessi, ho cambiato il modo di parlare, ho smesso di vestirmi come mi piaceva. E stavo peggio.\n\nUn giorno ho capito: era la loro paura, non la mia. Diverso non è sbagliato. Ora scrivo per chi sta ancora nascondendosi. La tua voce merita spazio.',
   },
   {
-    id: '4',
+    id: '3',
     slug: 'nessuno-dovrebbe-passare-da-qui',
     title: 'Nessuno dovrebbe passare da qui',
     excerpt: 'Il sistema a volte non ti vede. La mia storia è per chi si sente abbandonato dalle istituzioni.',
@@ -60,7 +50,7 @@ Perché nessuna voce è troppo piccola per essere importante.`,
     body: 'Quando denunci qualcosa a scuola e nessuno fa niente, impari in fretta che "le cose si risolvono" è una bugia. Ho segnalato episodi di bullismo. Mi hanno detto di "ignorare", di "non dare peso". Il bullo è ancora lì. Io ho cambiato scuola.\n\nNessuno dovrebbe passare da qui. Scrivo per chi si sente abbandonato dalle istituzioni che dovrebbero proteggerti. La tua rabbia è giusta. Cerca alleati: un insegnante, un genitore, un’associazione. Non arrenderti.',
   },
   {
-    id: '5',
+    id: '4',
     slug: 'la-prima-volta-che-ho-parlato',
     title: 'La prima volta che ho parlato',
     excerpt: 'Tenevo tutto dentro. Un giorno ho scritto una lettera e non l\'ho mai inviata. Ma mi ha salvato.',
@@ -71,7 +61,7 @@ Perché nessuna voce è troppo piccola per essere importante.`,
     body: 'Tenevo tutto dentro. Paura, vergogna, rabbia. Un giorno ho scritto una lettera e non l\'ho mai inviata. Era per chi mi aveva fatto del male. Scrivere mi ha fatto piangere, ma dopo mi sono sentito più leggero.\n\nOra condivido questa storia per dire: se non sei pronto a parlare con qualcuno, inizia a scrivere. Anche solo per te. Dare forma alle parole è il primo passo per riprendersi la voce.',
   },
   {
-    id: '6',
+    id: '5',
     slug: 'oltre-i-like',
     title: 'Oltre i like',
     excerpt: 'Il bullismo online non è "solo internet". È reale. E io non sono più in silenzio.',
@@ -81,18 +71,6 @@ Perché nessuna voce è troppo piccola per essere importante.`,
     readTime: '5 min',
     body: 'Il bullismo online non è "solo internet". I commenti, le foto condivise senza consenso, i gruppi dove ti insultano: ti seguono ovunque. Non puoi spegnere il telefono e dimenticare, perché domani riapri e tutto è ancora lì.\n\nHo smesso di stare in silenzio. Ho bloccato, segnalato, e ho parlato con i miei genitori. Non è debolezza chiedere aiuto. Questa storia è per chi pensa che "tanto è solo sui social". No. È reale. E tu meriti rispetto.',
   },
-
-  {
-    id: '7',
-    slug: 'la-prima-volta-che-ho-parlato',
-    title: 'La prima volta che ho parlato',
-    excerpt: 'Tenevo tutto dentro. Un giorno ho scritto una lettera e non l\'ho mai inviata. Ma mi ha salvato.',
-    author: 'G.',
-    date: '2024-01-20',
-    category: 'Storia di coraggio',
-    readTime: '4 min',
-    body: 'Tenevo tutto dentro. Paura, vergogna, rabbia. Un giorno ho scritto una lettera e non l\'ho mai inviata. Era per chi mi aveva fatto del male. Scrivere mi ha fatto piangere, ma dopo mi sono sentito più leggero.\n\nOra condivido questa storia per dire: se non sei pronto a parlare con qualcuno, inizia a scrivere. Anche solo per te. Dare forma alle parole è il primo passo per riprendersi la voce.',
-  },
 ];
 
 export const categories = [
@@ -100,7 +78,7 @@ export const categories = [
   { id: 'Bullismo', label: 'Bullismo' },
   { id: 'Ingiustizia', label: 'Ingiustizia' },
   { id: 'Storia di coraggio', label: 'Storie di coraggio' },
-  { id: 'Altro', label: 'Altro' },
+  { id: 'Altre storie', label: 'Altre storie' },
 ];
 
 export function getStoryBySlug(slug) {

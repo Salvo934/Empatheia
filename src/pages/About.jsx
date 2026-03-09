@@ -18,7 +18,7 @@ export default function About() {
             <p>
             Empatheia nasce per dare voce a chi spesso resta in silenzio. Raccontiamo storie di bullismo, ingiustizia e di tutte quelle situazioni in cui qualcuno non viene ascoltato o compreso.
             Crediamo che ogni storia abbia valore: nessuna voce è troppo piccola, nessun dolore è troppo insignificante. Attraverso il racconto vogliamo offrire sostegno a chi si sente solo e sensibilizzare le persone sull’importanza dell’ascolto e dell’empatia.
-            Il nostro obiettivo è trasformare le esperienze personali in consapevolezza collettiva, perché parlare di ciò che accade significa iniziare a cambiarlo..
+            Il nostro obiettivo è trasformare le esperienze personali in consapevolezza collettiva, perché parlare di ciò che accade significa iniziare a cambiarlo.
             </p>
           </section>
 
@@ -39,6 +39,9 @@ export default function About() {
               <Link to="/condividi"> condividere la tua</Link>. Le storie sono curate con rispetto: 
               non giudichiamo, non banalizziamo. L’obiettivo è dare visibilità a esperienze che troppo 
               spesso restano nascoste e far sentire meno soli chi le vive.
+              Gli utenti compilano un form con titolo, storia e firma/anonimo. Cliccando “Invia”, il contenuto viene automaticamente inserito in un’email pronta da inviare. 
+              Dopo l’invio, il team di Empatheia verifica e cura il testo prima della pubblicazione sul blog, garantendo sicurezza, privacy e qualità editoriale. 
+              L’utente mantiene il controllo e può scegliere se restare anonimo o firmato.
             </p>
           </section>
 
