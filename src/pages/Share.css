@@ -114,6 +114,61 @@
   line-height: 1.65;
 }
 
+.share-form-consent {
+  padding: 1.25rem 1.5rem;
+  background: rgba(var(--gold-rgb), 0.06);
+  border: 1px solid rgba(var(--gold-rgb), 0.2);
+  border-radius: 14px;
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.share-form-checkbox {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  margin: 0;
+  text-align: center;
+}
+
+.share-form-checkbox input[type="checkbox"] {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+  accent-color: var(--gold);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.share-form-checkbox span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.share-form-checkbox span strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.share-form-privacy-link {
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.share-form-privacy-link:hover {
+  color: var(--gold-light);
+  border-bottom-color: var(--gold-light);
+}
+
 .btn-submit {
   align-self: center;
   padding: 16px 40px;
@@ -128,7 +183,12 @@
   transition: background 0.2s, transform 0.2s;
 }
 
-.btn-submit:hover {
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-submit:hover:not(:disabled) {
   background: var(--gold-light);
   color: var(--bg);
   transform: translateY(-1px);
@@ -224,6 +284,14 @@
 
   .share-form textarea {
     min-height: 180px;
+  }
+
+  .share-form-consent {
+    padding: 1rem 1.25rem;
+  }
+
+  .share-form-checkbox span {
+    font-size: 0.9rem;
   }
 
   .btn-submit {

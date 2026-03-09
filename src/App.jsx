@@ -5,6 +5,7 @@ import Stories from './pages/Stories';
 import StorySingle from './pages/StorySingle';
 import About from './pages/About';
 import Share from './pages/Share';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="storie/:slug" element={<StorySingle />} />
         <Route path="chi-siamo" element={<About />} />
         <Route path="condividi" element={<Share />} />
+        <Route path="privacy-policy" element={<PrivacyPolicy />} />
       </Route>
     </Routes>
   );

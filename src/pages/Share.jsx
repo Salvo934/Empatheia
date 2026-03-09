@@ -11,14 +11,20 @@ export default function Share() {
     category: 'Bullismo',
     story: '',
   });
+  const [acceptPrivacy, setAcceptPrivacy] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
+    const { name, value, type, checked } = e.target;
+    if (type === 'checkbox') {
+      setAcceptPrivacy(checked);
+    } else {
+      setForm((prev) => ({ ...prev, [name]: value }));
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!acceptPrivacy) return;
     const author = form.author?.trim() || 'Anonimo';
     const title = form.title?.trim() || '(Senza titolo)';
     const category = form.category?.trim() || 'Bullismo';
@@ -121,7 +127,32 @@ ${body}
               required
             />
           </label>
-          <button type="submit" className="btn btn-primary btn-submit">
+          <div className="share-form-consent">
+            <label className="share-form-checkbox">
+              <input
+                type="checkbox"
+                name="acceptPrivacy"
+                checked={acceptPrivacy}
+                onChange={handleChange}
+                required
+                aria-describedby="consent-description"
+              />
+              <span id="consent-description">
+                Accetto la{' '}
+                <Link
+                  to="/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="share-form-privacy-link"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Privacy Policy
+                </Link>{' '}
+                e autorizzo la pubblicazione della mia storia sul sito.
+              </span>
+            </label>
+          </div>
+          <button type="submit" className="btn btn-primary btn-submit" disabled={!acceptPrivacy}>
             Invia la storia
           </button>
         </form>

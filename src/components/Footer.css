@@ -216,6 +216,16 @@
   color: var(--text-muted);
 }
 
+.footer-legal-link {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-legal-link:hover {
+  color: var(--gold);
+}
+
 .footer-message {
   margin: 0;
   font-family: var(--serif);

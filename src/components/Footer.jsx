@@ -33,6 +33,8 @@ export default function Footer() {
         <div className="container footer-bottom-inner">
           <p className="footer-legal">© {new Date().getFullYear()} Empatheia</p>
           <span className="footer-dot" aria-hidden="true">·</span>
+          <Link to="/privacy-policy" className="footer-legal-link">Privacy Policy</Link>
+          <span className="footer-dot" aria-hidden="true">·</span>
           <p className="footer-message">Ogni voce conta.</p>
         </div>
       </div>
